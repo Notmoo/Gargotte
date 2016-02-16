@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taverne>
+  <!-- Vente en menu -->
+  <menus>
+    <menu prix="0" vente="0" stock="14">
+      <nom>Menu Enfant</nom>
+      <contenu>
+        <plat>Hotdog-breton</plat>
+        <plat>
+          <choix>Crêpe sucrée</choix>
+          <choix>Une tranche de quatre-quart</choix>
+        </plat>
+        <plat>Un verre de soft au choix</plat>
+      </contenu>
+    </menu>
+    <menu prix="0" vente="5" stock="329">
+      <nom>Menu Basique</nom>
+      <contenu>
+        <plat>
+          <choix>Crêpe salée</choix>
+          <choix>salade composée</choix>
+        </plat>
+        <plat>
+          <choix>Part de tarte aux pommes</choix>
+          <choix>Crêpe sucrée</choix>
+        </plat>
+        <plat>Un verre de soft au choix</plat>
+      </contenu>
+    </menu>
+    <menu prix="0" vente="2" stock="10">
+      <nom>Menu Snack</nom>
+      <contenu>
+        <plat>
+          <choix>Une barre au choix</choix>
+          <choix>Une tranche de quatre-quart</choix>
+        </plat>
+        <plat>Un verre de soft au choix</plat>
+      </contenu>
+    </menu>
+    <menu prix="0" vente="1" stock="0">
+      <nom>Menu du joueur</nom>
+      <contenu>
+        <plat>Une tranche de quatre-quart</plat>
+        <plat>Une bouteille de soft</plat>
+        <plat>Goodies fil-rouge aléatoire</plat>
+      </contenu>
+    </menu>
+  </menus>
+  <!-- Ventes à l'unité -->
+  <types>
+    <type>
+      <nom>Galette Bretonne</nom>
+      <conception>Faites maison</conception>
+      <categorie>Galette</categorie>
+      <contenu>
+        <plat prix="0" vente="0" stock="0">Galette Jambon - Fromage - Oeuf</plat>
+        <plat prix="0" vente="0" stock="-2">Galette Chèvre - Formage - Miel - Noix</plat>
+        <plat prix="0" vente="0" stock="0">Galette Poulet - Formage - Tomate</plat>
+        <plat prix="0" vente="0" stock="0">Galette Omelette - Fromage - Bacon - Patates</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Hot-Dog Breton</nom>
+      <conception>Fait maison</conception>
+      <categorie>Plat</categorie>
+      <contenu>
+        <plat prix="1.5" vente="0" stock="0">Hot-Dog Saucisse - Fromage rappé/tranche - MKM</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Salade composée</nom>
+      <conception>Faites par le RU</conception>
+      <categorie>Plat</categorie>
+      <contenu>
+        <plat prix="0" vente="0" stock="0">Salade avec viande</plat>
+        <plat prix="0" vente="0" stock="0">Salade sans viande</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Dessert</nom>
+      <conception>faits par le RU</conception>
+      <categorie>Snack</categorie>
+      <contenu>
+        <plat prix="0" vente="0" stock="1">Tartes au pommes</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Crêpe Sucrée</nom>
+      <conception>Faites maison</conception>
+      <categorie>Galette</categorie>
+      <contenu>
+        <plat prix="1.5" vente="0" stock="0">Crêpe au sucre</plat>
+        <plat prix="1.5" vente="0" stock="0">Crêpe au miel</plat>
+        <plat prix="1.5" vente="0" stock="0">Crêpe à la confiture</plat>
+        <plat prix="1.5" vente="0" stock="0">Crêpe au Nutella</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>En-cas</nom>
+      <conception>Achetés</conception>
+      <categorie>Snack</categorie>
+      <contenu>
+        <plat prix="0.8" vente="0" stock="0">MnM's</plat>
+        <plat prix="0.8" vente="0" stock="0">Kinder Bueno</plat>
+        <plat prix="2" vente="0" stock="0">Quatre-quarts (entier)</plat>
+        <plat prix="0.8" vente="0" stock="0">Quatre-quarts (1 part)</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Boisson bouteille</nom>
+      <conception>Achetées</conception>
+      <categorie>Boisson</categorie>
+      <contenu>
+        <plat prix="2.5" vente="0" stock="0">Ice-Tea (bouteille)</plat>
+        <plat prix="2.5" vente="0" stock="0">Coca-Cola (bouteille)</plat>
+        <plat prix="2.5" vente="0" stock="0">Orangina (bouteille)</plat>
+        <plat prix="2.5" vente="0" stock="0">Limonade (bouteille)</plat>
+        <plat prix="1.5" vente="0" stock="0">Jus de pomme (bouteille)</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Boisson canette</nom>
+      <conception>Achetées</conception>
+      <categorie>Boisson</categorie>
+      <contenu>
+        <plat prix="0.8" vente="0" stock="0">Ice-Tea (canette)</plat>
+        <plat prix="0.8" vente="0" stock="0">Coca-Cola (canette)</plat>
+        <plat prix="0.8" vente="0" stock="0">Orangina (canette)</plat>
+        <plat prix="0.8" vente="0" stock="0">Limonade (canette)</plat>
+        <plat prix="1.5" vente="0" stock="0">Red Bull (canette)</plat>
+      </contenu>
+    </type>
+  </types>
+</taverne>

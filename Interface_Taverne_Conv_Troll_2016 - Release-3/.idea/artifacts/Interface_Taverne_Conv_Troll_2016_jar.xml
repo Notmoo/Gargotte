@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Interface_Taverne_Conv_Troll_2016:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Interface_Taverne_Conv_Troll_2016_jar</output-path>
+    <root id="archive" name="Interface_Taverne_Conv_Troll_2016.jar">
+      <element id="module-output" name="Interface_Taverne_Conv_Troll_2016" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/.idea/jdom-2.0.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
