@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taverne>
+  <!-- Vente en menu -->
+  <menus>
+    <menu prix="3.5" vente="33" stock="0">
+      <nom>Formule Snack</nom>
+      <contenu>
+        <plat>Hotdog-breton</plat>
+        <plat>Crêpe sucrée</plat>
+        <plat>Canette de soda au choix</plat>
+      </contenu>
+    </menu>
+    <menu prix="4" vente="59" stock="1">
+      <nom>Formule complete</nom>
+      <contenu>
+        <plat>Crêpe salée</plat>
+        <plat>
+          <choix>Part de tarte aux pommes</choix>
+          <choix>Crêpe sucrée</choix>
+        </plat>
+        <plat>Canette de soda au choix</plat>
+      </contenu>
+    </menu>
+    <menu prix="1.5" vente="3" stock="27">
+      <nom>Formule En-cas</nom>
+      <contenu>
+        <plat>Une barre au choix</plat>
+        <plat>Canette de soda au choix</plat>
+      </contenu>
+    </menu>
+    <menu prix="4" vente="14" stock="16">
+      <nom>Menu du joueur</nom>
+      <contenu>
+        <plat>Un quatre-quart</plat>
+        <plat>Une bouteille de soda au choix</plat>
+      </contenu>
+    </menu>
+  </menus>
+  <!-- Ventes à l'unité -->
+  <types>
+    <type>
+      <nom>Galette Bretonne</nom>
+      <conception>Faites maison</conception>
+      <categorie>Galette</categorie>
+      <contenu>
+        <plat prix="2" vente="27" stock="63">Galette Jambon - Fromage - Oeuf</plat>
+        <plat prix="2.5" vente="34" stock="56">Galette Chèvre - Formage - Miel - Noix</plat>
+        <plat prix="2" vente="15" stock="75">Galette Poulet - Formage - Tomate</plat>
+        <plat prix="2.5" vente="58" stock="32">Galette Omelette - Fromage - Bacon - Patates</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Hot-Dog Breton</nom>
+      <conception>Fait maison</conception>
+      <categorie>Plat</categorie>
+      <contenu>
+        <plat prix="2" vente="53" stock="10">Hot-Dog Porc - fromage</plat>
+        <plat prix="2" vente="1" stock="0">Hot-Dog Poulet - fromage</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Salade composée</nom>
+      <conception>Faites par le RU</conception>
+      <categorie>Plat</categorie>
+      <contenu>
+        <plat prix="1.5" vente="38" stock="12">Salade composée au comté</plat>
+        <plat prix="1.5" vente="9" stock="57">Salade de légumes</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Dessert</nom>
+      <conception>faits par le RU</conception>
+      <categorie>Snack</categorie>
+      <contenu>
+        <plat prix="1.5" vente="39" stock="369">Tarte au pommes</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Crêpe Sucrée</nom>
+      <conception>Faites maison</conception>
+      <categorie>Galette</categorie>
+      <contenu>
+        <plat prix="1" vente="54" stock="6">Crêpe au sucre</plat>
+        <plat prix="1" vente="3" stock="27">Crêpe au miel</plat>
+        <plat prix="1" vente="4" stock="26">Crêpe à la confiture</plat>
+        <plat prix="1" vente="62" stock="4">Crêpe au Nutella</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>En-cas</nom>
+      <conception>Achetés</conception>
+      <categorie>Snack</categorie>
+      <contenu>
+        <plat prix="1" vente="28" stock="6">MnM's</plat>
+        <plat prix="1" vente="30" stock="0">Kinder Bueno</plat>
+        <plat prix="1" vente="32" stock="0">Mars</plat>
+        <plat prix="2.5" vente="13" stock="22">Quatre-quarts (entier)</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Boisson bouteille</nom>
+      <conception>Achetées</conception>
+      <categorie>Boisson</categorie>
+      <contenu>
+        <plat prix="2" vente="30" stock="9">Ice-Tea 1.5L</plat>
+        <plat prix="2" vente="32" stock="12">Coca-Cola 1.5L</plat>
+        <plat prix="2" vente="27" stock="18">Oasis 1.5L</plat>
+        <plat prix="2" vente="20" stock="13">Orangina 1.5L</plat>
+        <plat prix="1.5" vente="7" stock="17">Jus de pomme 1L</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Boisson canette</nom>
+      <conception>Achetées</conception>
+      <categorie>Boisson</categorie>
+      <contenu>
+        <plat prix="1" vente="29" stock="0">Ice-Tea 33cl</plat>
+        <plat prix="1" vente="17" stock="2">Coca-Cola 33cl</plat>
+        <plat prix="1" vente="7" stock="15">Fanta 33cl</plat>
+        <plat prix="1" vente="12" stock="11">Sprite 33cl</plat>
+      </contenu>
+    </type>
+  </types>
+</taverne>
