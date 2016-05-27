@@ -60,8 +60,8 @@
                         <RadioButton fx:id="ChequePaymentMethodRadioButton" layoutX="783.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#chequePaymentMethodSelected" prefHeight="17.0" prefWidth="87.0" text="Chèque" />
                         <RadioButton fx:id="CompteAEPaymentMethodRadioButton" layoutX="783.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#compteAEPaymentMethodSelected" prefHeight="17.0" prefWidth="93.0" text="Compte AE" />
                         <Label fx:id="PaymentMethodSelectionLabel" layoutX="785.0" layoutY="245.0" prefHeight="17.0" prefWidth="104.0" text="Type de paiement" textAlignment="CENTER" underline="true" wrapText="true" />
-                        <RadioButton fx:id="FreeGuestPaymentMethodRadioButton" layoutX="785.0" layoutY="368.0" mnemonicParsing="false" text="Gratuit invité" />
-                        <RadioButton fx:id="FreeStaffPaymentMethodRadioButton" layoutX="785.0" layoutY="393.0" mnemonicParsing="false" text="Gratuit Staff" />
+                        <RadioButton fx:id="FreeGuestPaymentMethodRadioButton" layoutX="785.0" layoutY="368.0" mnemonicParsing="false" onMouseClicked="#freeGuestPaymentMethodSelected" text="Gratuit invité" />
+                        <RadioButton fx:id="FreeStaffPaymentMethodRadioButton" layoutX="785.0" layoutY="393.0" mnemonicParsing="false" onMouseClicked="#freeStaffPaymentMethodSelected" text="Gratuit Staff" />
                          </children>
                      </AnchorPane>
                  </content>
@@ -111,7 +111,7 @@
                   </AnchorPane>
               </content>
             </Tab>
-            <Tab text="Stats">
+            <Tab fx:id="TabPaneStat" text="Stats">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
