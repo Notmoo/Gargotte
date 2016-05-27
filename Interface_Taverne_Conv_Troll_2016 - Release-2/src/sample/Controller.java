@@ -232,7 +232,7 @@ public class Controller implements Initializable {
                 new EventHandler<CellEditEvent<Produit, String>>() {
                     @Override
                     public void handle(CellEditEvent<Produit, String> event) {
-                        model.updateAttributeValue(((Produit) event.getTableView().getItems().get(event.getTablePosition().getRow())),Integer.parseInt(event.getNewValue()),"vente");
+                        model.getDao().updateAttributeValue(((Produit) event.getTableView().getItems().get(event.getTablePosition().getRow())), Integer.parseInt(event.getNewValue()), "vente");
                     }
                 }
         );
@@ -241,7 +241,7 @@ public class Controller implements Initializable {
                 new EventHandler<CellEditEvent<Produit, String>>() {
                     @Override
                     public void handle(CellEditEvent<Produit, String> event) {
-                        model.updateAttributeValue(((Produit) event.getTableView().getItems().get(event.getTablePosition().getRow())),Integer.parseInt(event.getNewValue()),"stock");
+                        model.getDao().updateAttributeValue(((Produit) event.getTableView().getItems().get(event.getTablePosition().getRow())),Integer.parseInt(event.getNewValue()),"stock");
                     }
                 }
         );
@@ -267,12 +267,12 @@ public class Controller implements Initializable {
     @FXML
     private void updateStockDisplay(){
         //On relit les données de la base de donnée
-        model.initDBProduits();
+        model.getDao().initDBProduits();
         updateListView();
 
         //On recharge les données
         listProductTableView.clear();
-        listProductTableView.addAll(model.getDBProduits());
+        listProductTableView.addAll(model.getDao().getDBProduits());
 
         //On remet les paramètres par défaut concernant le verrouillage de l'onglet "MAJ Stock" :
         // verrouillé, le bouton affichant "Unlock", avec le champ de saisie du mot de passe vide
@@ -303,7 +303,7 @@ public class Controller implements Initializable {
             return true;
         }
         else{
-            model.clearVentes();
+            model.getDao().clearVentes();
             System.out.println("Fin de Sauvegarde Commande : Echec (stock insuffisant)");
             return false;
         }
@@ -330,7 +330,7 @@ public class Controller implements Initializable {
         listItemsSnack.clear();
         listItemsDrink.clear();
 
-        for(Produit elem : model.getDBProduits()){
+        for(Produit elem : model.getDao().getDBProduits()){
             try {
                 switch (elem.getCatNom()) {
                     case "menu":

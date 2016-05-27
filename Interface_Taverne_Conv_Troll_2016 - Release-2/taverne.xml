@@ -2,7 +2,7 @@
 <taverne>
   <!-- Vente en menu -->
   <menus>
-    <menu prix="0" vente="0" stock="14">
+    <menu prix="0" vente="1" stock="13">
       <nom>Menu Enfant</nom>
       <contenu>
         <plat>Hotdog-breton</plat>
@@ -27,7 +27,7 @@
         <plat>Un verre de soft au choix</plat>
       </contenu>
     </menu>
-    <menu prix="0" vente="0" stock="12">
+    <menu prix="0" vente="1" stock="11">
       <nom>Menu Snack</nom>
       <contenu>
         <plat>
@@ -64,7 +64,7 @@
       <conception>Fait maison</conception>
       <categorie>Plat</categorie>
       <contenu>
-        <plat prix="1.5" vente="0" stock="0">Hot-Dog Saucisse - Fromage rappé/tranche - MKM</plat>
+        <plat prix="1.5" vente="6" stock="994">Hot-Dog Saucisse - Fromage rappé/tranche - MKM</plat>
       </contenu>
     </type>
     <type>
@@ -81,7 +81,7 @@
       <conception>faits par le RU</conception>
       <categorie>Snack</categorie>
       <contenu>
-        <plat prix="0" vente="0" stock="1">Tartes au pommes</plat>
+        <plat prix="0" vente="1" stock="0">Tartes au pommes</plat>
       </contenu>
     </type>
     <type>
