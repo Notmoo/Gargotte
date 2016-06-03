@@ -27,7 +27,7 @@ public class Main extends Application {
             FXMLLoader fxmlLoaderMain = new FXMLLoader();
             VBox page = fxmlLoaderMain.load(getClass().getResource("Interface_V2.fxml").openStream());
             mainScene = new Scene(page);
-            mainScene.getStylesheets().add("Style_ListView.css");
+            mainScene.getStylesheets().add("css_java_2.css");
             this.primaryStage.setScene(mainScene);
             this.primaryStage.setTitle("Taverne du Troll penché of the dead V2.1");
             this.primaryStage.show();

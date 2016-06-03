@@ -1,17 +1,17 @@
 #Rupture
 {
-	background-color : #ff9595;
-	color : black;
+	-fx-background-color : #ff9595;
+	-fx-color : black;
 }
 
 #Faible
 {	
-	background-color : #FFFFCC;
-	color : black;
+	-fx-background-color : #FFFFCC;
+	-fx-color : black;
 }
 
 #Haut
 {
-	background-color : #CCFFCC;
-	color : black;
+	-fx-background-color : #CCFFCC;
+	-fx-color : black;
 }
