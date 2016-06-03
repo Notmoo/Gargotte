@@ -8,9 +8,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableColumn.CellEditEvent;
@@ -20,21 +18,13 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyCodeCombination;
 import javafx.scene.input.KeyCombination;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
-import javafx.stage.Popup;
-import javafx.stage.Stage;
 import javafx.util.Callback;
 import model.*;
 
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 @SuppressWarnings("ALL")
@@ -178,6 +168,8 @@ public class Controller implements Initializable {
         SnackListView.setItems(listItemsSnack);
         DrinkListView.setItems(listItemsDrink);
         MenuListView.setItems(listItemsMenu);
+
+        initListViewColorDisplay(MenuListView, GaletteListView, MealListView, SnackListView, DrinkListView);
 
         //Association entre les RadioButton et la liste
         radioButtonList = new ArrayList<>();
@@ -424,6 +416,11 @@ public class Controller implements Initializable {
         }
     }
 
+    @FXML
+    private void handleClose(){
+
+    }
+
     //Listener de la liste des menus, onglet "Caisse"
     @FXML
     private void handleAddSelectionFromMenuList(){
@@ -529,5 +526,36 @@ public class Controller implements Initializable {
         if(CompteAEPaymentMethodRadioButton.isSelected()){ return "compte AE"; }
         if(FreeGuestPaymentMethodRadioButton.isSelected()){ return "gratuit (invité)"; }
         return "gratuit (staff)";
+    }
+
+    private void initListViewColorDisplay(ListView... listViews) {
+        for (ListView listView : listViews) {
+            listView.setCellFactory(lv -> {
+                return new ListCell<Produit>() {
+
+                    @Override
+                    public void updateItem(Produit item, boolean empty) {
+                        super.updateItem(item, empty);
+                        if (item != null) {
+                            if (Integer.parseInt(item.getNombreStock()) <= 0) {
+                                setId("Rupture");
+                                //setStyle("-fx-background-color: #FF9595; -fx-font-fill: black");
+                            } else {
+                                if (Integer.parseInt(item.getNombreStock()) > 0 && Integer.parseInt(item.getNombreStock()) < 30) {
+                                    setId("Faible");
+                                    //setStyle("-fx-background-color: #FFFFCC; -fx-font-fill: black");
+                                }else{
+                                    setId("Haut");
+                                    //setStyle("-fx-background-color: #CCFFCC; -fx-font-fill: black");
+                                }
+                            }
+                            setText(item.toString());
+                        } else {
+                            setStyle(null);
+                        }
+                    }
+                };
+            });
+        }
     }
 }

@@ -37,7 +37,7 @@
         <plat>Un verre de soft au choix</plat>
       </contenu>
     </menu>
-    <menu prix="0" vente="0" stock="1">
+    <menu prix="0" vente="1" stock="0">
       <nom>Menu du joueur</nom>
       <contenu>
         <plat>Une tranche de quatre-quart</plat>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jdom2">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/jdom2" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/jdom2" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/jdom2" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/jdom2" recursive="false" type="SOURCES" />
+  </library>
+</component>

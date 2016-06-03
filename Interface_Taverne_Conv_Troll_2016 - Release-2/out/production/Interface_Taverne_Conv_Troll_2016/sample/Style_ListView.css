@@ -1,0 +1,13 @@
+#Rupture {
+    -fx-background-color: #FF9595;
+    -fx-font-fill: black
+}
+
+#Faible {
+    -fx-background-color: #FFFFCC;
+    -fx-font-fill: black
+}
+#Haut{
+    -fx-background-color: #CCFFCC;
+    -fx-font-fill: black
+}

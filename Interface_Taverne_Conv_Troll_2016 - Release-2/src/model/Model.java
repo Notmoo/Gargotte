@@ -26,7 +26,7 @@ public class Model {
 
     private final String adminPassword;
 
-    //COnstructeurs
+    //Constructeurs
     public Model() {
         adminPassword = "licorne"; // Admin password, required for stock update via software
 
