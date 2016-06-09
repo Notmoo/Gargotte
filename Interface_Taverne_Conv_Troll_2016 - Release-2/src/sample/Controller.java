@@ -1,6 +1,7 @@
 package sample;
 
 
+import com.sun.javafx.scene.control.skin.TableViewSkinBase;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -18,6 +19,7 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyCodeCombination;
 import javafx.scene.input.KeyCombination;
+import javafx.scene.input.ScrollEvent;
 import javafx.scene.paint.Color;
 import javafx.util.Callback;
 import model.*;
@@ -189,7 +191,8 @@ public class Controller implements Initializable {
 
         //Association entre le tableur de l'onglet "Stock" et la liste des produits
         StockTableView.setItems(listProductTableView);
-
+        initStockTableViewColorDisplay(StockTableView);
+        //initTableViewColorDisplay(StockTableView);
 
         //Association entre les listes et les éléments de l'onglet "MAJ Stock"
         NomStockUpdateTableColumn.setCellValueFactory( new PropertyValueFactory<Produit,String>("nom") );
@@ -240,6 +243,7 @@ public class Controller implements Initializable {
 
         //Association entre le tableur de l'onglet "MAJ Stock" et la liste des produits
         StockUpdateTableView.setItems(listProductTableView);
+        //initUpdateStockTableViewColorDisplay(StockUpdateTableView);
 
         //On inscrit l'action effectuable sur le bouton de validation de commande
         ValidationButton.setText("Validation");
@@ -345,6 +349,11 @@ public class Controller implements Initializable {
                 }
             }catch(NoCatProduitInVenteException e){};
         }
+    }
+
+    @FXML
+    private void StockTableViewMouseClickHandler(){
+        StockTableView.getSelectionModel().clearSelection();
     }
 
     //Vérifie que le mot de passe correspond et met à jour l'affichage en fonction de la situation
@@ -558,4 +567,43 @@ public class Controller implements Initializable {
             });
         }
     }
+
+    private void initStockTableViewColorDisplay(TableView tableView) {
+
+            tableView.setRowFactory(new Callback<TableView<Produit>, TableRow<Produit>>() {
+                @Override
+                public TableRow<Produit> call(TableView<Produit> tableView) {
+                    final TableRow<Produit> row = new TableRow<Produit>() {
+                        @Override
+                        protected void updateItem(Produit item, boolean empty){
+                            super.updateItem(item, empty);
+                            if (item != null) {
+                                if (Integer.parseInt(item.getNombreStock()) <= 0) {
+                                    setId("Rupture");
+                                } else {
+                                    if (Integer.parseInt(item.getNombreStock()) > 0 && Integer.parseInt(item.getNombreStock()) < 30) {
+                                        setId("Faible");
+                                    }else{
+                                        setId("Haut");
+                                    }
+                                }
+                                setText(item.toString());
+                            } else {
+                                setStyle(null);
+                            }
+                        }
+                    };
+                    return row;
+                }
+            });
+
+            tableView.addEventFilter(ScrollEvent.ANY, new EventHandler<ScrollEvent>() {
+                @Override
+                public void handle(ScrollEvent scrollEvent) {
+                    System.out.println("Scrolled.");
+                    tableView.getProperties().put(TableViewSkinBase.RECREATE, Boolean.TRUE);
+                }
+            });
+    }
+
 }
