@@ -11,6 +11,7 @@ public class Produit {
     private final SimpleDoubleProperty prix;
     private final SimpleIntegerProperty nombreVendu;
     private final SimpleIntegerProperty nombreStock;
+    private final SimpleIntegerProperty nombreBufferVente;
 
     public Produit(String name, double prix, String cat, int nombreStock, int nombreVendu){
         this.nom=new SimpleStringProperty(name);
@@ -19,6 +20,7 @@ public class Produit {
 
         this.nombreStock=new SimpleIntegerProperty(nombreStock);
         this.nombreVendu=new SimpleIntegerProperty(nombreVendu);
+        this.nombreBufferVente = new SimpleIntegerProperty(0);
     }
 
     public String getPrix(){
@@ -38,10 +40,12 @@ public class Produit {
     public String getNombreStock() {
         return Integer.toString(nombreStock.get());
     }
+    public int getNombreBufferVente() {return nombreBufferVente.get();}
     public void setNombreVendu(int nb) { nombreVendu.set(nb); }
     public void setNombreVendu(String str) { nombreVendu.set(Integer.parseInt(str)); }
     public void setNombreStock(int nb) { nombreStock.set(nb); }
     public void setNombreStock(String str) { nombreStock.set(Integer.parseInt(str)); }
+    public void setNombreBufferVente(int nb) {nombreBufferVente.set(nb);}
 
     public boolean testStock(){
         return nombreStock.get()>0;

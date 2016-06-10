@@ -71,7 +71,11 @@ public class Controller implements Initializable {
 
     //Récupération de la liste commande
     @FXML
-    private ListView<Produit> BufferVenteListView;
+    private TableView<Produit> BufferVenteTableView;
+    @FXML
+    private TableColumn ProductVenteTableColumn;
+    @FXML
+    private TableColumn QuantiteVenteTableColumn;
 
     //Récupération du bouton de validation de la commande
     @FXML
@@ -179,7 +183,7 @@ public class Controller implements Initializable {
         updateListView();
 
         // Association entre les listes et les éléments de l'onglet "Caisse"
-        BufferVenteListView.setItems(listItemsVentes);
+        BufferVenteTableView.setItems(listItemsVentes);
         GaletteListView.setItems(listItemsGalette);
         MealListView.setItems(listItemsMeal);
         SnackListView.setItems(listItemsSnack);
@@ -553,7 +557,16 @@ public class Controller implements Initializable {
             listItemsVentes.add(currentProduct);
             System.out.println("selection added to BufferVenteList");
             updateTextField();
-            listView.getSelectionModel().clearSelection();
+			if(listItemsVentes.contains(currentProduct)) {
+                listItemsVentes.get(listItemsVentes.indexOf(currentProduct)).setNombreBufferVente(listItemsVentes.get(listItemsVentes.indexOf(currentProduct)).getNombreBufferVente() + 1);
+                listItemsVentes.set(listItemsVentes.indexOf(currentProduct), listItemsVentes.get(listItemsVentes.indexOf(currentProduct)));
+                System.out.println("incrementing the quantity");
+
+            } else {
+                listItemsVentes.add(currentProduct);
+                listItemsVentes.get(listItemsVentes.indexOf(currentProduct)).setNombreBufferVente(1);
+                System.out.println("selection added to BufferVenteTable");
+            }
         }else{
             System.err.println("Erreur vente ("+currentProduct.getNom()+") : stock épuisé");
         }
@@ -569,10 +582,10 @@ public class Controller implements Initializable {
     @FXML
     private void handleRemoveSelection(){
         ValidationButton.setText("Validation");
-        listItemsVentes.remove(BufferVenteListView.getSelectionModel().getSelectedItem());
+        listItemsVentes.remove(BufferVenteTableView.getSelectionModel().getSelectedItem());
         System.out.println("selection removed from BufferVenteList");
         updateTextField();
-        BufferVenteListView.getSelectionModel().clearSelection();
+        BufferVenteTableView.getSelectionModel().clearSelection();
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
