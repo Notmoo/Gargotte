@@ -42,6 +42,10 @@ public class Controller implements Initializable {
     private Model model;
 
     //-----------------------------------------------ONGLET "CAISSE"----------------------------------------------------
+    //récupération du Tab contenant le système de caisse
+    @FXML
+    private Tab TabPaneCaisse;
+
     //Récupération des différentes listes de produit
     @FXML
     private ListView<Produit> MenuListView;

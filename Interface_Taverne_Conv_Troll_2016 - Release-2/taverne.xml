@@ -37,7 +37,7 @@
         <plat>Un verre de soft au choix</plat>
       </contenu>
     </menu>
-    <menu prix="0" vente="1" stock="0">
+    <menu prix="0" vente="1" stock="29">
       <nom>Menu du joueur</nom>
       <contenu>
         <plat>Une tranche de quatre-quart</plat>
@@ -53,8 +53,8 @@
       <conception>Faites maison</conception>
       <categorie>Galette</categorie>
       <contenu>
-        <plat prix="0" vente="0" stock="0">Galette Jambon - Fromage - Oeuf</plat>
-        <plat prix="0" vente="0" stock="-2">Galette Chèvre - Formage - Miel - Noix</plat>
+        <plat prix="0" vente="0" stock="30">Galette Jambon - Fromage - Oeuf</plat>
+        <plat prix="0" vente="0" stock="31">Galette Chèvre - Formage - Miel - Noix</plat>
         <plat prix="0" vente="0" stock="0">Galette Poulet - Formage - Tomate</plat>
         <plat prix="0" vente="0" stock="0">Galette Omelette - Fromage - Bacon - Patates</plat>
       </contenu>

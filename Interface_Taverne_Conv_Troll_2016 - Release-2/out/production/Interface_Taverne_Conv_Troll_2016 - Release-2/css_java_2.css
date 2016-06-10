@@ -2,7 +2,7 @@
 {
 	-fx-background-color : #ffb7b7;
 	-fx-color : black;
-	text-decoration : line-through;
+	text-decoration : line-through
 }
 
 #Faible
@@ -15,4 +15,8 @@
 {	
 	-fx-background-color : #4dfe3c;			/*VERT VIF*/
 	-fx-color : black
+}
+
+.tab-pane:selected{
+    -fx-background-color : #4dfe3c;			/*VERT VIF*/
 }
