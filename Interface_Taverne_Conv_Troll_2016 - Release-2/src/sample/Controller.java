@@ -326,12 +326,7 @@ public class Controller implements Initializable {
                     else
                         SelectTabPane.getSelectionModel().selectNext();
                 }
-                if(((KeyEvent) event).getCode()==KeyCode.UP){
-                    System.out.println("UP");
-                }
-                if(((KeyEvent) event).getCode()==KeyCode.DOWN){
-                    System.out.println("DOWN");
-                }
+                
 
             }
         });
