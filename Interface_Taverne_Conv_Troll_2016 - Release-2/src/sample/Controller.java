@@ -183,6 +183,8 @@ public class Controller implements Initializable {
         updateListView();
 
         // Association entre les listes et les éléments de l'onglet "Caisse"
+        ProductVenteTableColumn.setCellValueFactory(new PropertyValueFactory<Produit, String>("nom"));
+        QuantiteVenteTableColumn.setCellValueFactory(new PropertyValueFactory<Produit, Integer>("nombreBufferVente"));
         BufferVenteTableView.setItems(listItemsVentes);
         GaletteListView.setItems(listItemsGalette);
         MealListView.setItems(listItemsMeal);
@@ -398,7 +400,7 @@ public class Controller implements Initializable {
         double total=0;
         if(listItemsVentes.size()!=0) {
             for (Produit tempProd : listItemsVentes) {
-                total += tempProd.getPrixDouble();
+                total += tempProd.getPrixDouble() * tempProd.getNombreBufferVente();
             }
             PrixCommandeTextField.setText((new Double(total).toString().format("%.2f",total)) + " €");
         }
@@ -509,7 +511,6 @@ public class Controller implements Initializable {
         else{
             PaymentMethodSelectionLabel.setTextFill(Color.RED);
         }
-        LiquidePaymentMethodRadioButton.setSelected(true);
     }
 
     @FXML
@@ -554,19 +555,16 @@ public class Controller implements Initializable {
 
         if(currentProduct.testStock()) {
             ValidationButton.setText("Validation");
-            listItemsVentes.add(currentProduct);
-            System.out.println("selection added to BufferVenteList");
-            updateTextField();
 			if(listItemsVentes.contains(currentProduct)) {
                 listItemsVentes.get(listItemsVentes.indexOf(currentProduct)).setNombreBufferVente(listItemsVentes.get(listItemsVentes.indexOf(currentProduct)).getNombreBufferVente() + 1);
                 listItemsVentes.set(listItemsVentes.indexOf(currentProduct), listItemsVentes.get(listItemsVentes.indexOf(currentProduct)));
                 System.out.println("incrementing the quantity");
-
             } else {
                 listItemsVentes.add(currentProduct);
                 listItemsVentes.get(listItemsVentes.indexOf(currentProduct)).setNombreBufferVente(1);
                 System.out.println("selection added to BufferVenteTable");
             }
+            updateTextField();
         }else{
             System.err.println("Erreur vente ("+currentProduct.getNom()+") : stock épuisé");
         }
