@@ -2,7 +2,7 @@
 <taverne>
   <!-- Vente en menu -->
   <menus>
-    <menu prix="0" vente="1" stock="13">
+    <menu prix="0" vente="2" stock="12">
       <nom>Menu Enfant</nom>
       <contenu>
         <plat>Hotdog-breton</plat>

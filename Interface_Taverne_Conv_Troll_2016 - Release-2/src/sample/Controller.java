@@ -7,6 +7,7 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -16,10 +17,7 @@ import javafx.scene.control.TableColumn.CellEditEvent;
 import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyCodeCombination;
-import javafx.scene.input.KeyCombination;
-import javafx.scene.input.ScrollEvent;
+import javafx.scene.input.*;
 import javafx.scene.paint.Color;
 import javafx.util.Callback;
 import model.*;
@@ -27,6 +25,8 @@ import model.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+
+import static java.awt.event.KeyEvent.KEY_RELEASED;
 
 
 @SuppressWarnings("ALL")
@@ -40,6 +40,15 @@ public class Controller implements Initializable {
     private final ObservableList<Produit> listItemsVentes = FXCollections.observableArrayList();
     private final ObservableList<Produit> listProductTableView = FXCollections.observableArrayList();
     private Model model;
+
+    //----------------------------------Conteneurs d'onglets------------------------------------------------------------
+    @FXML
+    private TabPane MainTabPane;
+    @FXML
+    private  TabPane SelectTabPane;
+
+
+
 
     //-----------------------------------------------ONGLET "CAISSE"----------------------------------------------------
     //récupération du Tab contenant le système de caisse
@@ -88,7 +97,6 @@ public class Controller implements Initializable {
     //Récupération des options contenues dans le menu
     @FXML
     private MenuItem MenuItemValidate;
-
 
 
     //-----------------------------------------------ONGLET "STOCK"-----------------------------------------------------
@@ -258,6 +266,34 @@ public class Controller implements Initializable {
 
         //On met en place les différents raccourci clavier
         MenuItemValidate.setAccelerator(new KeyCodeCombination(KeyCode.S, KeyCombination.CONTROL_DOWN));
+        MenuItemValidate.setAccelerator(new KeyCodeCombination(KeyCode.ENTER, KeyCombination.CONTROL_DOWN));
+
+
+        final KeyCombination keyComb1 = new KeyCodeCombination(KeyCode.T,
+                KeyCombination.CONTROL_DOWN);
+        final KeyCombination keyComb2= new KeyCodeCombination(KeyCode.T,
+                KeyCombination.SHIFT_DOWN);
+        MainTabPane.addEventHandler(KeyEvent.KEY_RELEASED, new EventHandler() {
+            @Override
+            public void handle(Event event) {
+                if (keyComb1.match((KeyEvent)event)) {
+                    if(MainTabPane.getSelectionModel().isSelected(3))
+                        MainTabPane.getSelectionModel().select(0);
+                    else
+                        MainTabPane.getSelectionModel().selectNext();
+                }
+                if (keyComb2.match((KeyEvent) event)) {
+
+                    if (SelectTabPane.getSelectionModel().isSelected(4))
+                        SelectTabPane.getSelectionModel().select(0);
+                    else
+                        SelectTabPane.getSelectionModel().selectNext();
+                }
+
+            }
+        });
+
+
 
 
     }
