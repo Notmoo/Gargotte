@@ -2,7 +2,7 @@
 <taverne>
   <!-- Vente en menu -->
   <menus>
-    <menu prix="0" vente="3" stock="11">
+    <menu prix="0" vente="6" stock="8">
       <nom>Menu Enfant</nom>
       <contenu>
         <plat>Hotdog-breton</plat>
@@ -13,7 +13,7 @@
         <plat>Un verre de soft au choix</plat>
       </contenu>
     </menu>
-    <menu prix="0" vente="0" stock="334">
+    <menu prix="0" vente="1" stock="333">
       <nom>Menu Basique</nom>
       <contenu>
         <plat>
@@ -27,7 +27,7 @@
         <plat>Un verre de soft au choix</plat>
       </contenu>
     </menu>
-    <menu prix="0" vente="1" stock="11">
+    <menu prix="0" vente="2" stock="10">
       <nom>Menu Snack</nom>
       <contenu>
         <plat>
@@ -37,7 +37,7 @@
         <plat>Un verre de soft au choix</plat>
       </contenu>
     </menu>
-    <menu prix="0" vente="1" stock="29">
+    <menu prix="0" vente="3" stock="27">
       <nom>Menu du joueur</nom>
       <contenu>
         <plat>Une tranche de quatre-quart</plat>

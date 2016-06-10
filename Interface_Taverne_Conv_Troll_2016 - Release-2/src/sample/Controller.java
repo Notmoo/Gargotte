@@ -505,6 +505,7 @@ public class Controller implements Initializable {
         else{
             PaymentMethodSelectionLabel.setTextFill(Color.RED);
         }
+        LiquidePaymentMethodRadioButton.setSelected(true);
     }
 
     @FXML
