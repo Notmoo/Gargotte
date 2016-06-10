@@ -2,6 +2,7 @@ package sample;
 
 
 import com.sun.javafx.scene.control.skin.TableViewSkinBase;
+import javafx.application.Platform;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -11,6 +12,7 @@ import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableColumn.CellEditEvent;
@@ -172,6 +174,7 @@ public class Controller implements Initializable {
         //On initialise tout le modèle, y compris la lecture de la base de donnée et la récupération des produits
         model = new Model();
 
+
         //on initialise l'affichage des listes de l'onglet "Caisse"
         updateListView();
 
@@ -269,10 +272,22 @@ public class Controller implements Initializable {
         MenuItemValidate.setAccelerator(new KeyCodeCombination(KeyCode.ENTER, KeyCombination.CONTROL_DOWN));
 
 
-        final KeyCombination keyComb1 = new KeyCodeCombination(KeyCode.T,
+        final KeyCombination keyComb1 = new KeyCodeCombination(KeyCode.A,
                 KeyCombination.CONTROL_DOWN);
-        final KeyCombination keyComb2= new KeyCodeCombination(KeyCode.T,
+        final KeyCombination keyComb2= new KeyCodeCombination(KeyCode.A,
                 KeyCombination.SHIFT_DOWN);
+
+        TabPaneCaisse.setOnSelectionChanged(new EventHandler<Event>() {
+            @Override
+            public void handle(Event event) {
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        LiquidePaymentMethodRadioButton.requestFocus();
+                    }
+                });
+            }
+        });
         MainTabPane.addEventHandler(KeyEvent.KEY_RELEASED, new EventHandler() {
             @Override
             public void handle(Event event) {
@@ -289,10 +304,22 @@ public class Controller implements Initializable {
                     else
                         SelectTabPane.getSelectionModel().selectNext();
                 }
+                if(((KeyEvent) event).getCode()==KeyCode.UP){
+                    System.out.println("UP");
+                }
+                if(((KeyEvent) event).getCode()==KeyCode.DOWN){
+                    System.out.println("DOWN");
+                }
 
             }
         });
 
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                LiquidePaymentMethodRadioButton.requestFocus();
+            }
+        });
 
 
 
@@ -317,6 +344,21 @@ public class Controller implements Initializable {
         UnlockStockUpdateTableViewLabel.setText("");
         PasswordField.setDisable(false);
         PasswordField.setPromptText("enter password here");
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                PasswordField.requestFocus();
+            }
+        });
+        PasswordField.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                if (event.getCode().equals(KeyCode.ENTER))
+                {
+                    handleUnlockButton(new ActionEvent());
+                }
+            }
+        });
 
     }
 
@@ -474,6 +516,7 @@ public class Controller implements Initializable {
     @FXML
     private void handleAddSelectionFromMenuList(){
         handleAddSelection(MenuListView);
+
     }
 
     //Listener de la liste des produits, onglet "Caisse"
@@ -513,6 +556,12 @@ public class Controller implements Initializable {
         }else{
             System.err.println("Erreur vente ("+currentProduct.getNom()+") : stock épuisé");
         }
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                LiquidePaymentMethodRadioButton.requestFocus();
+            }
+        });
     }
 
     //Listener de la liste répertoriant la commande en cours, onglet "Caisse"
@@ -523,6 +572,12 @@ public class Controller implements Initializable {
         System.out.println("selection removed from BufferVenteList");
         updateTextField();
         BufferVenteListView.getSelectionModel().clearSelection();
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                LiquidePaymentMethodRadioButton.requestFocus();
+            }
+        });
     }
 
     //Listeners des boutons de sélection du type de paiement, onglet "Caisse"
