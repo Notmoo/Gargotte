@@ -13,17 +13,28 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableColumn.CellEditEvent;
 import javafx.scene.control.TableColumn.CellDataFeatures;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.*;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 import model.*;
 
+import java.awt.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -48,6 +59,8 @@ public class Controller implements Initializable {
     private TabPane MainTabPane;
     @FXML
     private  TabPane SelectTabPane;
+
+    private VBox VBoxMain;
 
 
 
@@ -80,6 +93,9 @@ public class Controller implements Initializable {
     //Récupération du bouton de validation de la commande
     @FXML
     private Button ValidationButton;
+
+    @FXML
+    Menu MenuFile;
 
     //Récupération des boutons de sélection du mode de paiement et du label les annonçant, et déclaration de la collection qui va les contenir
     @FXML
@@ -324,6 +340,8 @@ public class Controller implements Initializable {
                 LiquidePaymentMethodRadioButton.requestFocus();
             }
         });
+
+
 
 
 
@@ -715,4 +733,18 @@ public class Controller implements Initializable {
             });
     }
 
+    public void handleHelp(ActionEvent actionEvent) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Convention du troll");
+        alert.setHeaderText("Aide raccourcis clavier");
+        alert.setContentText("ctrl+[A] : change l'onglet actif\n" +
+                "shift+[A] : change les onglets de type de produits \n" +
+                "ctrl+[S] ou ctrl+[ENTER]  : valide une commande\n" +
+                "Notons qu'il est aussi possible de naviguer dans\n" +
+                " les moyens de paiements à l'aide des flèches.\n");
+
+        alert.setWidth(550);
+        alert.setHeight(550);
+        alert.show();
+    }
 }

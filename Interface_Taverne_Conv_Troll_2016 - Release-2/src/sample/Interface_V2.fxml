@@ -15,6 +15,7 @@
              <Menu fx:id="MenuFile" mnemonicParsing="false" text="File">
                  <items>
                      <MenuItem fx:id="MenuItemValidate" mnemonicParsing="false" onAction="#handleValidation" text="Validate" />
+                     <MenuItem fx:id="MenuItemHelp" mnemonicParsing="false" onAction="#handleHelp" text="Aide raccourcis" />
                   <MenuItem fx:id="MenuItemClose" mnemonicParsing="false" onAction="#handleClose" text="Close" />
                  </items>
              </Menu>
