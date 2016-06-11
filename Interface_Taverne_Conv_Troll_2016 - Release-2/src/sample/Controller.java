@@ -530,7 +530,7 @@ public class Controller implements Initializable {
 
     @FXML
     private void handleClose(){
-
+        Platform.exit();
     }
 
     //Listener de la liste des menus, onglet "Caisse"
