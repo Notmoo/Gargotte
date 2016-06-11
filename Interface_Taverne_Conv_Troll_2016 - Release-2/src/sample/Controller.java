@@ -12,8 +12,6 @@ import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -28,18 +26,12 @@ import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.input.*;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Text;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
 import javafx.util.Callback;
 import model.*;
 
-import java.awt.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-
-import static java.awt.event.KeyEvent.KEY_RELEASED;
 
 
 @SuppressWarnings("ALL")
@@ -59,7 +51,7 @@ public class Controller implements Initializable {
     private TabPane MainTabPane;
     @FXML
     private  TabPane SelectTabPane;
-
+    @FXML
     private VBox VBoxMain;
 
 
@@ -228,7 +220,7 @@ public class Controller implements Initializable {
 
         //Association entre le tableur de l'onglet "Stock" et la liste des produits
         StockTableView.setItems(listProductTableView);
-        initStockTableViewColorDisplay(StockTableView);
+        initTableViewColorDisplay(StockTableView);
         //initTableViewColorDisplay(StockTableView);
 
         //Association entre les listes et les éléments de l'onglet "MAJ Stock"
@@ -280,7 +272,7 @@ public class Controller implements Initializable {
 
         //Association entre le tableur de l'onglet "MAJ Stock" et la liste des produits
         StockUpdateTableView.setItems(listProductTableView);
-        //initUpdateStockTableViewColorDisplay(StockUpdateTableView);
+        initTableViewColorDisplay(StockUpdateTableView);
 
         //On inscrit l'action effectuable sur le bouton de validation de commande
         ValidationButton.setText("Validation");
@@ -355,6 +347,10 @@ public class Controller implements Initializable {
         //On recharge les données
         listProductTableView.clear();
         listProductTableView.addAll(model.getDao().getDBProduits());
+
+        //On force la réinitialisation de l'affichage des tableurs des onglets Stock et MAJ stock
+        StockTableView.getProperties().put(TableViewSkinBase.RECREATE, Boolean.TRUE);
+        StockUpdateTableView.getProperties().put(TableViewSkinBase.RECREATE, Boolean.TRUE);
 
         //On remet les paramètres par défaut concernant le verrouillage de l'onglet "MAJ Stock" :
         // verrouillé, le bouton affichant "Unlock", avec le champ de saisie du mot de passe vide
@@ -703,14 +699,14 @@ public class Controller implements Initializable {
         }
     }
 
-    private void initStockTableViewColorDisplay(TableView tableView) {
-
+    private void initTableViewColorDisplay(TableView... tableViews) {
+        for(TableView tableView : tableViews) {
             tableView.setRowFactory(new Callback<TableView<Produit>, TableRow<Produit>>() {
                 @Override
                 public TableRow<Produit> call(TableView<Produit> tableView) {
                     final TableRow<Produit> row = new TableRow<Produit>() {
                         @Override
-                        protected void updateItem(Produit item, boolean empty){
+                        protected void updateItem(Produit item, boolean empty) {
                             super.updateItem(item, empty);
                             if (item != null) {
                                 if (Integer.parseInt(item.getNombreStock()) <= 0) {
@@ -718,7 +714,7 @@ public class Controller implements Initializable {
                                 } else {
                                     if (Integer.parseInt(item.getNombreStock()) > 0 && Integer.parseInt(item.getNombreStock()) < 30) {
                                         setId("Faible");
-                                    }else{
+                                    } else {
                                         setId("Haut");
                                     }
                                 }
@@ -739,7 +735,9 @@ public class Controller implements Initializable {
                     tableView.getProperties().put(TableViewSkinBase.RECREATE, Boolean.TRUE);
                 }
             });
+        }
     }
+
 
     public void handleHelp(ActionEvent actionEvent) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);

@@ -23,7 +23,7 @@
        </MenuBar>
        <TabPane fx:id="MainTabPane" prefHeight="587.0" prefWidth="956.0" tabClosingPolicy="UNAVAILABLE">
          <tabs>
-             <Tab fx:id="TabPaneCaisse" text="Caisse">
+             <Tab fx:id="TabPaneCaisse" onSelectionChanged="#updateStockDisplay" text="Caisse">
                  <content>
                      <AnchorPane fx:id="AnchorPaneMain" maxHeight="-1.0" maxWidth="-1.0" prefHeight="496.0" prefWidth="640.0">
                          <children>
