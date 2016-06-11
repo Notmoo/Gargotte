@@ -387,7 +387,7 @@ public class Controller implements Initializable {
         String paymentMethod = getPaymentMethodSelection();
 
         for(Produit elem : listItemsVentes){
-            model.addVente(new Vente(elem, 1, paymentMethod));
+            model.addVente(new Vente(elem, elem.getNombreBufferVente(), paymentMethod));
             System.out.println("+ une vente!");
         }
 
@@ -416,6 +416,8 @@ public class Controller implements Initializable {
                 total += tempProd.getPrixDouble() * tempProd.getNombreBufferVente();
             }
             PrixCommandeTextField.setText((new Double(total).toString().format("%.2f",total)) + " €");
+        }else{
+            PrixCommandeTextField.setText("0 €");
         }
     }
 
@@ -568,13 +570,26 @@ public class Controller implements Initializable {
 
         if(currentProduct.testStock()) {
             ValidationButton.setText("Validation");
-			if(listItemsVentes.contains(currentProduct)) {
-                listItemsVentes.get(listItemsVentes.indexOf(currentProduct)).setNombreBufferVente(listItemsVentes.get(listItemsVentes.indexOf(currentProduct)).getNombreBufferVente() + 1);
-                listItemsVentes.set(listItemsVentes.indexOf(currentProduct), listItemsVentes.get(listItemsVentes.indexOf(currentProduct)));
-                System.out.println("incrementing the quantity");
+            boolean listContains = false;
+            int index = 0;
+            for(Produit elem:listItemsVentes) {
+                if(elem.getNom() == currentProduct.getNom()) {
+                    listContains = true;
+                    break;
+                }
+                index++;
+            }
+            if(listContains) {
+                if(listItemsVentes.get(index).getNombreBufferVente() < Integer.parseInt(listItemsVentes.get(index).getNombreStock())) {
+                    listItemsVentes.get(index).setNombreBufferVente(listItemsVentes.get(index).getNombreBufferVente() + 1);
+                    listItemsVentes.set(index, listItemsVentes.get(index));
+                    System.out.println("incrementing the quantity");
+                } else {
+                    System.out.println("no more quantity");
+                }
             } else {
                 listItemsVentes.add(currentProduct);
-                listItemsVentes.get(listItemsVentes.indexOf(currentProduct)).setNombreBufferVente(1);
+                listItemsVentes.get(index).setNombreBufferVente(1);
                 System.out.println("selection added to BufferVenteTable");
             }
             updateTextField();
