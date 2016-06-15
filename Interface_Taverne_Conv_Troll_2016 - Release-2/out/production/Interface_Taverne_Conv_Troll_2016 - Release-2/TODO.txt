@@ -38,15 +38,13 @@ Liste des choses à faire dans le cadre du projet de GL40
 
 [DONE] - Afficher un code couleur sur les produits de l'onglet caisse, en rapport avec leurs disponibilités respectives
 [DONE] - Mettre en place un jeu de raccourcis claviers permettant une navigation au clavier dans les onglets et entre les onglets
-[----] - ajouter une page d'aide pour la dénomination des racourcis comme ceci : 
-ctrl+[A] : change l'onglet actif
-shift+[A] : change les onglets de type de produits 
-ctrl+[S] ou ctrl+[ENTER]  : valide une commande
-Notons qu'il est aussi possible de naviguer dans les moyens de paiements à l'aide des touches fléchées. Et de rentrer le mot de passe dans la Maj Stock directement suivit de la touche entré !
-
-
-
+[DONE] - ajouter une page d'aide pour la dénomination des racourcis comme ceci :
+            * ctrl+[A] : change l'onglet actif
+            * shift+[A] : change les onglets de type de produits
+            * ctrl+[S] ou ctrl+[ENTER]  : valide une commande
+         Notons qu'il est aussi possible de naviguer dans les moyens de paiements à l'aide des touches fléchées.
+         Et de rentrer le mot de passe dans la Maj Stock directement suivit de la touche entré !
 [ASAP] - Afficher un code couleur sur les produuits des onglets Stock et MAJ Stock, en rapport avec leurs disponibilités respectives
 [DONE] - Mettre en place un code couleur pour l'onglet actif
-[----] - Mettre en place une concaténation des produits similaires dans la liste des produits composant la commande en cours
+[DONE] - Mettre en place une concaténation des produits similaires dans la liste des produits composant la commande en cours
 [----] - Faire les analyses Keystroke et les diagrammes (de structure, ....) en rapport avec les améliorations ci-dessus

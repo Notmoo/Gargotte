@@ -290,6 +290,10 @@ public class Controller implements Initializable {
                 KeyCombination.CONTROL_DOWN);
         final KeyCombination keyComb2= new KeyCodeCombination(KeyCode.A,
                 KeyCombination.SHIFT_DOWN);
+        final KeyCombination keyComb3= new KeyCodeCombination(KeyCode.Z,
+                KeyCombination.CONTROL_DOWN);
+        final KeyCombination keyComb4= new KeyCodeCombination(KeyCode.W,
+                KeyCombination.CONTROL_DOWN);
 
         TabPaneCaisse.setOnSelectionChanged(new EventHandler<Event>() {
             @Override
@@ -317,6 +321,25 @@ public class Controller implements Initializable {
                         SelectTabPane.getSelectionModel().select(0);
                     else
                         SelectTabPane.getSelectionModel().selectNext();
+                }
+                if (keyComb3.match((KeyEvent) event)) {
+
+                    handleRemoveSelection();
+                }
+                if (keyComb4.match((KeyEvent) event)) {
+
+                    System.out.println("passed");
+                    if (SelectTabPane.getSelectionModel().isSelected(0))
+                        handleAddSelection(MenuListView);
+                    if (SelectTabPane.getSelectionModel().isSelected(1))
+                        handleAddSelection(GaletteListView);
+                    if (SelectTabPane.getSelectionModel().isSelected(2))
+                        handleAddSelection(MealListView);
+                    if (SelectTabPane.getSelectionModel().isSelected(3))
+                        handleAddSelection(SnackListView);
+                    if (SelectTabPane.getSelectionModel().isSelected(4))
+                        handleAddSelection(DrinkListView);
+                   // handleAddSelection();
                 }
                 
 
@@ -746,11 +769,14 @@ public class Controller implements Initializable {
         alert.setContentText("ctrl+[A] : change l'onglet actif\n" +
                 "shift+[A] : change les onglets de type de produits \n" +
                 "ctrl+[S] ou ctrl+[ENTER]  : valide une commande\n" +
+                "ctrl+[Z] pour supprimer un produit dans la commande\n"+
+                "ctrl+[W] pour ajouter un produit dans la commande\n"+
                 "Notons qu'il est aussi possible de naviguer dans\n" +
                 " les moyens de paiements à l'aide des flèches.\n");
 
-        alert.setWidth(550);
-        alert.setHeight(550);
+        alert.setResizable(true);
+        alert.getDialogPane().setPrefSize(500, 300);
+
         alert.show();
     }
 }
