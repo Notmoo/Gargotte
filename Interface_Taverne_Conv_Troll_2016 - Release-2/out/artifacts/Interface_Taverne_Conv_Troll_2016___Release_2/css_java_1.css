@@ -1,0 +1,22 @@
+#Rupture
+{
+	-fx-background-color : #ff9595;
+	-fx-color : black;
+}
+
+#Faible
+{	
+	-fx-background-color : #FFFFCC;
+	-fx-color : black;
+}
+
+#Haut
+{
+	-fx-background-color : #CCFFCC;
+	-fx-color : black;
+}
+
+
+.tab:selected{
+    -fx-background-color : #FFFFFF;
+}
