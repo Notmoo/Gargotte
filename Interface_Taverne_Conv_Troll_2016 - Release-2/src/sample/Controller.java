@@ -324,21 +324,30 @@ public class Controller implements Initializable {
                 }
                 if (keyComb3.match((KeyEvent) event)) {
 
-                    handleRemoveSelection();
+                    if (SelectTabPane.getSelectionModel().isSelected(0))
+                        handleRemoveKeyboardSelection(MenuListView);
+                    if (SelectTabPane.getSelectionModel().isSelected(1))
+                        handleRemoveKeyboardSelection(GaletteListView);
+                    if (SelectTabPane.getSelectionModel().isSelected(2))
+                        handleRemoveKeyboardSelection(MealListView);
+                    if (SelectTabPane.getSelectionModel().isSelected(3))
+                        handleRemoveKeyboardSelection(SnackListView);
+                    if (SelectTabPane.getSelectionModel().isSelected(4))
+                        handleRemoveKeyboardSelection(DrinkListView);
                 }
                 if (keyComb4.match((KeyEvent) event)) {
 
                     System.out.println("passed");
                     if (SelectTabPane.getSelectionModel().isSelected(0))
-                        handleAddSelection(MenuListView);
+                        handleAddSelection(MenuListView, true);
                     if (SelectTabPane.getSelectionModel().isSelected(1))
-                        handleAddSelection(GaletteListView);
+                        handleAddSelection(GaletteListView, true);
                     if (SelectTabPane.getSelectionModel().isSelected(2))
-                        handleAddSelection(MealListView);
+                        handleAddSelection(MealListView, true);
                     if (SelectTabPane.getSelectionModel().isSelected(3))
-                        handleAddSelection(SnackListView);
+                        handleAddSelection(SnackListView, true);
                     if (SelectTabPane.getSelectionModel().isSelected(4))
-                        handleAddSelection(DrinkListView);
+                        handleAddSelection(DrinkListView, true);
                    // handleAddSelection();
                 }
                 
@@ -555,36 +564,36 @@ public class Controller implements Initializable {
     //Listener de la liste des menus, onglet "Caisse"
     @FXML
     private void handleAddSelectionFromMenuList(){
-        handleAddSelection(MenuListView);
+        handleAddSelection(MenuListView, false);
 
     }
 
     //Listener de la liste des produits, onglet "Caisse"
     @FXML
     private void handleAddSelectionFromGaletteList(){
-        handleAddSelection(GaletteListView);
+        handleAddSelection(GaletteListView, false);
     }
 
     //Listener de la liste des produits, onglet "Caisse"
     @FXML
     private void handleAddSelectionFromMealList(){
-        handleAddSelection(MealListView);
+        handleAddSelection(MealListView, false);
     }
 
     //Listener de la liste des produits, onglet "Caisse"
     @FXML
     private void handleAddSelectionFromSnackList(){
-        handleAddSelection(SnackListView);
+        handleAddSelection(SnackListView, false);
     }
 
     //Listener de la liste des produits, onglet "Caisse"
     @FXML
     private void handleAddSelectionFromDrinkList(){
-        handleAddSelection(DrinkListView);
+        handleAddSelection(DrinkListView, false);
     }
 
     //Ajoute l'élement sélectionné de la liste passée en paramètre
-    private void handleAddSelection(ListView<Produit> listView){
+    private void handleAddSelection(ListView<Produit> listView, boolean isKeyboardShortcut){
         Produit currentProduct = listView.getSelectionModel().getSelectedItem();
 
         if(currentProduct.testStock()) {
@@ -627,10 +636,61 @@ public class Controller implements Initializable {
     @FXML
     private void handleRemoveSelection(){
         ValidationButton.setText("Validation");
-        listItemsVentes.remove(BufferVenteTableView.getSelectionModel().getSelectedItem());
+
+        Produit currentProduct = BufferVenteTableView.getSelectionModel().getSelectedItem();
+        boolean listContains;
+        int index = 0;
+        for(Produit elem:listItemsVentes) {
+            if(elem.getNom() == currentProduct.getNom()) {
+                listContains = true;
+                break;
+            }
+            index++;
+        }
+
+        if(listItemsVentes.get(index).getNombreBufferVente() > 1) {
+            listItemsVentes.get(index).setNombreBufferVente(listItemsVentes.get(index).getNombreBufferVente() - 1);
+            listItemsVentes.set(index, listItemsVentes.get(index));
+            System.out.println("incrementing the quantity");
+        }else{
+            listItemsVentes.remove(BufferVenteTableView.getSelectionModel().getSelectedItem());
+        }
         System.out.println("selection removed from BufferVenteList");
         updateTextField();
         BufferVenteTableView.getSelectionModel().clearSelection();
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                LiquidePaymentMethodRadioButton.requestFocus();
+            }
+        });
+    }
+
+    private void handleRemoveKeyboardSelection(ListView<Produit> listView){
+        ValidationButton.setText("Validation");
+
+        Produit currentProduct = listView.getSelectionModel().getSelectedItem();
+        boolean listContains;
+        int index = 0;
+        for(Produit elem:listItemsVentes) {
+            if(elem.getNom() == currentProduct.getNom()) {
+                listContains = true;
+                break;
+            }
+            index++;
+        }
+
+        if(listItemsVentes.get(index).getNombreBufferVente() > 1) {
+            listItemsVentes.get(index).setNombreBufferVente(listItemsVentes.get(index).getNombreBufferVente() - 1);
+            listItemsVentes.set(index, listItemsVentes.get(index));
+            System.out.println("incrementing the quantity");
+        }else{
+            listItemsVentes.remove(index);
+        }
+
+
+        System.out.println("selection removed from BufferVenteList");
+        updateTextField();
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
