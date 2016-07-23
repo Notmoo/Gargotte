@@ -161,23 +161,6 @@ public class Controller implements Initializable {
     private Button UnlockStockUpdateTableViewButton;
     @FXML
     private Label UnlockStockUpdateTableViewLabel;
-
-    //-----------------------------------------------ONGLET "MAJ STOCK"-------------------------------------------------
-    //Récupération du Tab contenant les données chiffrées
-    @FXML
-    private Tab TabPaneStat;
-
-    //récupération des différents label affichant les données
-    @FXML
-    private Label TotalGainStatLabel; //Montant total des ventes
-    @FXML
-    private Label TotalNumberStatTabLabel; //Nombre total de ventes
-    @FXML
-    private Label TotalFreeNumberStatTabLabel; //Nombre total de produits offert (staff et invités)
-    @FXML
-    private Label TotalFreeGainStatTabLabel; //Montant total des repas offert
-
-
     //--------------------------------------------------------CODE------------------------------------------------------
 
     //Méthode initialize, obligatoire pour la classe controller et se lance lors de la création de la VBox dans Main.java

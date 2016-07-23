@@ -1,14 +1,6 @@
 package model;
 
 import java.io.*;
-import org.jdom2.*;
-import org.jdom2.input.*;
-import org.jdom2.output.Format;
-import org.jdom2.output.XMLOutputter;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Iterator;
 
 
 

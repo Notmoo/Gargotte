@@ -123,23 +123,6 @@
                   </AnchorPane>
               </content>
             </Tab>
-            <Tab fx:id="TabPaneStat" text="Stats">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="122.0" layoutX="33.0" layoutY="67.0" stroke="BLACK" width="289.0" />
-                        <Label fx:id="TotalGainStatTabLabel" layoutX="214.0" layoutY="80.0" prefHeight="17.0" prefWidth="87.0" text="0" />
-                        <Label layoutX="43.0" layoutY="80.0" prefHeight="17.0" prefWidth="143.0" text="Montant des ventes" />
-                        <Label layoutX="43.0" layoutY="106.0" prefHeight="17.0" prefWidth="143.0" text="Nombre de ventes" />
-                        <Label fx:id="TotalNumberStatTabLabel" layoutX="214.0" layoutY="106.0" prefHeight="17.0" prefWidth="85.0" text="0" />
-                        <Label layoutX="43.0" layoutY="132.0" prefHeight="17.0" prefWidth="143.0" text="Nombre de repas offert" />
-                        <Label fx:id="TotalFreeNumberStatTabLabel" layoutX="214.0" layoutY="132.0" prefHeight="17.0" prefWidth="84.0" text="0" />
-                        <Label layoutX="43.0" layoutY="155.0" prefHeight="17.0" prefWidth="143.0" text="Montant perdu" />
-                        <Label fx:id="TotalFreeGainStatTabLabel" layoutX="214.0" layoutY="155.0" prefHeight="17.0" prefWidth="85.0" text="0" />
-                     </children>
-                  </AnchorPane>
-              </content>
-            </Tab>
          </tabs>
        </TabPane>
    </children>

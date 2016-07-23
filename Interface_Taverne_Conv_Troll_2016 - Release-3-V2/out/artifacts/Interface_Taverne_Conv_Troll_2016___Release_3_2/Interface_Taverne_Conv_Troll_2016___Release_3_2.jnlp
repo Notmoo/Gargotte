@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Interface_Taverne_Conv_Troll_2016___Release_3_2.jnlp">
+  <information>
+    <title>Gargotte_Conv'Troll_v3.2</title>
+    <vendor>Cess</vendor>
+    <description>Interface_Taverne_Conv_Troll_2016 - Release-3.2</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Interface_Taverne_Conv_Troll_2016___Release_3_2.jar" size="44497" download="eager" />
+    <jar href="jdom-2.0.6-contrib.jar" size="167108" download="eager" />
+    <jar href="jdom-2.0.6-javadoc.jar" size="1007377" download="eager" />
+    <jar href="jdom-2.0.6-junit.jar" size="494414" download="eager" />
+    <jar href="jdom-2.0.6-sources.jar" size="860190" download="eager" />
+    <jar href="jdom-2.0.6.jar" size="304924" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="sample.Main"  name="Interface_Taverne_Conv_Troll_2016 - Release-3.2" />
+  <update check="background"/>
+</jnlp>

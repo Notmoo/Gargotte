@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+      <artifact name="Interface_Taverne_Conv_Troll_2016 - Release-3.2" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -31,15 +31,12 @@
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="162" column="50" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
+              <caret line="359" column="0" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#updateStockDisplay#0;class#Controller#0" expanded="false" />
-                <element signature="method#saveSoldItem#0;class#Controller#0" expanded="false" />
+                <element signature="method#initialize#0;class#Controller#0" expanded="false" />
                 <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
                 <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
                 <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
-                <element signature="method#validation#0;class#Controller#0" expanded="false" />
                 <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
                 <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
                 <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
@@ -59,46 +56,70 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Model.java">
+      <file leaf-file-name="taverne.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taverne.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModeleDAO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/Model.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding>
+                <element signature="method#Model#0;class#Model#0" expanded="false" />
+                <element signature="method#addVente#0;class#Model#0" expanded="false" />
+                <element signature="method#saveLog#0;class#Model#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModeleDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/ModeleDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0272436">
-              <caret line="211" column="28" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="491" column="52" selection-start-line="491" selection-start-column="52" selection-end-line="491" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#getDBProduitsWithoutMenu#0;class#ModeleDAO#0" expanded="false" />
+                <element signature="method#addVente#0;class#ModeleDAO#0" expanded="false" />
+                <element signature="method#saveVentes#0;class#ModeleDAO#0" expanded="false" />
+                <element signature="method#venteMenu#0;class#ModeleDAO#0" expanded="false" />
+                <element signature="method#removePlat#0;class#ModeleDAO#0" expanded="false" />
+                <element signature="method#ventePlat#0;class#ModeleDAO#0" expanded="false" />
+                <element signature="method#initDBProduits#0;class#ModeleDAO#0" expanded="false" />
                 <element signature="method#updateAttributeValue#0;class#ModeleDAO#0" expanded="false" />
-                <element signature="method#displayFileContent#0;class#ModeleDAO#0" expanded="false" />
-                <element signature="method#displayBufferVente#0;class#ModeleDAO#0" expanded="false" />
+                <element signature="method#loadVentes#0;class#ModeleDAO#0" expanded="false" />
+                <element signature="e#22984#22985#0" expanded="true" />
+                <element signature="e#23020#23021#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Produit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Produit.java">
+        <entry file="file://$PROJECT_DIR$/src/items/Produit.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vendable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/items/Vendable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -108,17 +129,35 @@
         <entry file="file://$PROJECT_DIR$/src/items/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding>
+                <element signature="method#Menu#0;class#Menu#0" expanded="false" />
+                <element signature="method#Menu#1;class#Menu#0" expanded="false" />
+                <element signature="method#updateNombreStock#0;class#Menu#0" expanded="false" />
+                <element signature="method#testStock#0;class#Menu#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Produit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/items/Produit.java">
+      <file leaf-file-name="Vendable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/items/Vendable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+              <folding>
+                <element signature="e#2065#2066#0" expanded="true" />
+                <element signature="e#2107#2108#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vente.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/items/Vente.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -129,11 +168,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sample/Interface_V2.fxml" />
+        <option value="$PROJECT_DIR$/src/model/LogLine.java" />
+        <option value="$PROJECT_DIR$/src/items/Vendable.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/src/items/Produit.java" />
-        <option value="$PROJECT_DIR$/src/model/Model.java" />
+        <option value="$PROJECT_DIR$/taverne.xml" />
+        <option value="$PROJECT_DIR$/src/items/Vente.java" />
         <option value="$PROJECT_DIR$/src/model/ModeleDAO.java" />
+        <option value="$PROJECT_DIR$/src/sample/Interface_V2.fxml" />
+        <option value="$PROJECT_DIR$/src/model/Model.java" />
       </list>
     </option>
   </component>
@@ -174,32 +216,33 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-3.2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-3.2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-3-V2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-3.2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-3-V2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -209,11 +252,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-3.2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-3-V2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -227,11 +270,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-3.2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-3-V2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -245,11 +288,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-3.2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-2" />
+              <option name="myItemId" value="Interface_Taverne_Conv_Troll_2016 - Release-3-V2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -263,7 +306,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,7 +317,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Interface_Taverne_Conv_Troll_2016 - Release-3-V2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/css_java_1.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -283,8 +325,11 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="items" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Guillaume\Documents\GitHub\Gargotte\Interface_Taverne_Conv_Troll_2016 - Release-2\src" />
+      <recent name="C:\Users\Guillaume\Documents\GitHub\Gargotte\Interface_Taverne_Conv_Troll_2016 - Release-3-V2\src" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -426,35 +471,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="60" y="-8" width="1314" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23589341" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668713" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18711656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46081504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.115030676" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -471,7 +516,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -483,10 +528,7 @@
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="29" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -494,7 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -502,459 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="18" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
-          <folding>
-            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateStockDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#saveSoldItem#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
-            <element signature="method#validation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="29" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css_java_1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css_java_2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-          <folding>
-            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateStockDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#saveSoldItem#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
-            <element signature="method#validation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="29" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css_java_1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css_java_2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-          <folding>
-            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateStockDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#saveSoldItem#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
-            <element signature="method#validation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-          <folding>
-            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateStockDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#saveSoldItem#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
-            <element signature="method#validation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-          <folding>
-            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="40" />
-          <folding>
-            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateStockDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#saveSoldItem#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
-            <element signature="method#validation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateStockDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#saveSoldItem#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
-            <element signature="method#validation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateStockDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#saveSoldItem#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
-            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
-            <element signature="method#validation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
-            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
-            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css_java_1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css_java_2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="29" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -978,13 +566,479 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="162" column="50" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#updateStockDisplay#0;class#Controller#0" expanded="false" />
-            <element signature="method#saveSoldItem#0;class#Controller#0" expanded="false" />
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
             <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
             <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
             <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
-            <element signature="method#validation#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="29" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css_java_1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css_java_2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="124" column="18" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
+          <folding>
+            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="29" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css_java_1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css_java_2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+          <folding>
+            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="29" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css_java_1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css_java_2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+          <folding>
+            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+          <folding>
+            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+          <folding>
+            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="40" />
+          <folding>
+            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleRemoveKeyboardSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#liquidePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#chequePaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#compteAEPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#clearPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#isPaymentMethodSelected#0;class#Controller#0" expanded="false" />
+            <element signature="method#getPaymentMethodSelection#0;class#Controller#0" expanded="false" />
+            <element signature="method#initListViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#initTableViewColorDisplay#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleHelp#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css_java_1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css_java_2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TODO.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/LogLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding>
+            <element signature="method#Menu#0;class#Menu#0" expanded="false" />
+            <element signature="method#Menu#1;class#Menu#0" expanded="false" />
+            <element signature="method#updateNombreStock#0;class#Menu#0" expanded="false" />
+            <element signature="method#testStock#0;class#Menu#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="359" column="0" selection-start-line="359" selection-start-column="0" selection-end-line="359" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateTextField#0;class#Controller#0" expanded="false" />
+            <element signature="method#updateListView#0;class#Controller#0" expanded="false" />
+            <element signature="method#handleUnlockButton#0;class#Controller#0" expanded="false" />
             <element signature="method#handleValidation#0;class#Controller#0" expanded="false" />
             <element signature="method#handleAddSelectionFromMenuList#0;class#Controller#0" expanded="false" />
             <element signature="method#handleAddSelection#0;class#Controller#0" expanded="false" />
@@ -1006,7 +1060,7 @@
     <entry file="file://$PROJECT_DIR$/src/items/Produit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1014,44 +1068,84 @@
     <entry file="file://$PROJECT_DIR$/src/items/Vendable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+          <folding>
+            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#2107#2108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taverne.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/items/Vente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Produit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ModeleDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0272436">
-          <caret line="211" column="28" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="491" column="52" selection-start-line="491" selection-start-column="52" selection-end-line="491" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getDBProduitsWithoutMenu#0;class#ModeleDAO#0" expanded="false" />
+            <element signature="method#addVente#0;class#ModeleDAO#0" expanded="false" />
+            <element signature="method#saveVentes#0;class#ModeleDAO#0" expanded="false" />
+            <element signature="method#venteMenu#0;class#ModeleDAO#0" expanded="false" />
+            <element signature="method#removePlat#0;class#ModeleDAO#0" expanded="false" />
+            <element signature="method#ventePlat#0;class#ModeleDAO#0" expanded="false" />
+            <element signature="method#initDBProduits#0;class#ModeleDAO#0" expanded="false" />
             <element signature="method#updateAttributeValue#0;class#ModeleDAO#0" expanded="false" />
-            <element signature="method#displayFileContent#0;class#ModeleDAO#0" expanded="false" />
-            <element signature="method#displayBufferVente#0;class#ModeleDAO#0" expanded="false" />
+            <element signature="method#loadVentes#0;class#ModeleDAO#0" expanded="false" />
+            <element signature="e#22984#22985#0" expanded="true" />
+            <element signature="e#23020#23021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Interface_V2.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03803132">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="n#Tab#0;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#1;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+            <element signature="n#Tab#2;n#tabs#0;n#TabPane#0;n#children#0;n#VBox#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding>
+            <element signature="method#Model#0;class#Model#0" expanded="false" />
+            <element signature="method#addVente#0;class#Model#0" expanded="false" />
+            <element signature="method#saveLog#0;class#Model#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1062,7 +1156,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Interface_Taverne_Conv_Troll_2016 - Release-2</last-edited>
+          <last-edited>Interface_Taverne_Conv_Troll_2016 - Release-3.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1110,11 +1204,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Interface_Taverne_Conv_Troll_2016 - Release-2</last-edited>
+          <last-edited>Interface_Taverne_Conv_Troll_2016 - Release-3.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
