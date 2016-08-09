@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="Interface_Taverne_Conv_Troll_2016 - Release-4">
+    <output-path>$PROJECT_DIR$/out/artifacts/Interface_Taverne_Conv_Troll_2016___Release_4</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="htmlParamFile" value="" />
+        <option name="paramFile" value="" />
+        <option name="title" value="Gargotte_Conv'Troll_v3.2" />
+        <option name="vendor" value="Cess" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Interface_Taverne_Conv_Troll_2016___Release_4.jar">
+        <element id="module-output" name="Interface_Taverne_Conv_Troll_2016 - Release-4" />
+      </element>
+      <element id="library" level="project" name="jdom2" />
+      <element id="file-copy" path="$PROJECT_DIR$/taverne.xml" />
+      <element id="file-copy" path="$PROJECT_DIR$/records.log" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/css_java_2.css" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/css_java_1.css" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taverne>
+  <!-- Vente en menu -->
+  <menus>
+    <menu prix="0" vente="18" stock="0">
+      <nom>Menu Enfant</nom>
+      <contenu>
+        <plat>Galette test</plat>
+        <plat>Salade test</plat>
+        <plat>Flan test</plat>
+      </contenu>
+    </menu>
+  </menus>
+  <!-- Ventes à l'unité -->
+  <types>
+    <type>
+      <nom>Galette Bretonne</nom>
+      <categorie>Galette</categorie>
+      <contenu>
+        <plat prix="0" vente="4" stock="1">Galette test</plat>
+        <plat prix="0" vente="4" stock="14">Galette test v2</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Salade composée</nom>
+      <categorie>Plat</categorie>
+      <contenu>
+        <plat prix="0" vente="1" stock="197">Salade test</plat>
+      </contenu>
+    </type>
+    <type>
+      <nom>Dessert</nom>
+      <categorie>Snack</categorie>
+      <contenu>
+        <plat prix="0" vente="0" stock="197">Flan test</plat>
+      </contenu>
+    </type>
+  </types>
+</taverne>
